@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<script>
+  var header = document.getElementById("mathSigns");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+<body>
+  <div class="sum">
+    <input type = "text" name = "text" id="text" value = "">
+  </div>
+  <div class="mathSigns">
+    <div class="operator">
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='+'; return false;" value="Я добавлю +" ></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='-'; return false;" value="Я добавлю -" ></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='/'; return false;" value="Я добавлю /" ></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='*'; return false;" value="Я добавлю *" ></p>
+  </div>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='1'; return false;" value="1"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='2'; return false;" value="2"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='3'; return false;" value="3"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='4'; return false;" value="4"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='5'; return false;" value="5"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='6'; return false;" value="6"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='7'; return false;" value="7"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='8'; return false;" value="8"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='9'; return false;" value="9"></p>
+    <p><input type="button" class="btn" onclick="document.getElementById('text').value+='0'; return false;" value="0"></p>
+  </div>
+
+</body>
