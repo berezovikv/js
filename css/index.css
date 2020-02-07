@@ -14,7 +14,11 @@ p {
 .operator {
     margin-bottom: 60px;
 }
-.btn:active{
+
+.btn{
+    background-color: snow;
+}
+ .btn:active{
     background-color: blue;
     color: white;
 }
