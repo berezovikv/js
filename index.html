@@ -2,10 +2,16 @@
 <html>
 
 <head>
-    <title>Flexbox</title>
+    <title>JS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
+    <script >
+       function count(element) {
+          document.getElementById('input').value+=element;
+          }
+    </script>
+      
 </head>
 
 <body>
@@ -14,21 +20,21 @@
   </div>
   <div class="mathSigns">
     <div class="operator">
-    <p><input type="button" class="btn" value='Я добавлю +' onclick="document.getElementById('input').value+='+';"> </p>
-    <p><input type="button" class="btn" value='Я добавлю -' onclick="document.getElementById('input').value+='-';"></p>
-    <p><input type="button" class="btn" value='Я добавлю /' onclick="document.getElementById('input').value+='/';"></p>
-    <p><input type="button" class="btn" value='Я добавлю *' onclick="document.getElementById('input').value+='*';"></p>
+    <p><input type="button" class="btn" value='Я добавлю +' onclick="count('+')"> </p>
+    <p><input type="button" class="btn" value='Я добавлю -' onclick="count('-')"></p>
+    <p><input type="button" class="btn" value='Я добавлю /' onclick="count('/')"></p>
+    <p><input type="button" class="btn" value='Я добавлю *' onclick="count('*')"></p>
   </div>
-    <p><input type="button" class="btn" value="1" onclick="document.getElementById('input').value+='1';"></p>
-    <p><input type="button" class="btn" value="2" onclick="document.getElementById('input').value+='2';"></p>
-    <p><input type="button" class="btn" value="3" onclick="document.getElementById('input').value+='3';"></p>
-    <p><input type="button" class="btn" value="4" onclick="document.getElementById('input').value+='4';"></p>
-    <p><input type="button" class="btn" value="5" onclick="document.getElementById('input').value+='5';"></p>
-    <p><input type="button" class="btn" value="6" onclick="document.getElementById('input').value+='6';"></p>
-    <p><input type="button" class="btn" value="7" onclick="document.getElementById('input').value+='7';"></p>
-    <p><input type="button" class="btn" value="8" onclick="document.getElementById('input').value+='8';"></p>
-    <p><input type="button" class="btn" value="9" onclick="document.getElementById('input').value+='9';"></p>
-    <p><input type="button" class="btn" value="0" onclick="document.getElementById('input').value+='0';"></p>
+    <p><input type="button" class="btn" value="1" onclick="count('1')"></p>
+    <p><input type="button" class="btn" value="2" onclick="count('2')"></p>
+    <p><input type="button" class="btn" value="3" onclick="count('3')"></p>
+    <p><input type="button" class="btn" value="4" onclick="count('4')"></p>
+    <p><input type="button" class="btn" value="5" onclick="count('5')"></p>
+    <p><input type="button" class="btn" value="6" onclick="count('6')"></p>
+    <p><input type="button" class="btn" value="7" onclick="count('7')"></p>
+    <p><input type="button" class="btn" value="8" onclick="count('8')"></p>
+    <p><input type="button" class="btn" value="9" onclick="count('9')"></p>
+    <p><input type="button" class="btn" value="0" onclick="count('0')"></p>
   </div>
 
 </body>
